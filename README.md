@@ -1,6 +1,6 @@
 # Sistema de Figurinhas da Copa
 
-Projeto desenvolvido para a disciplina de Estrutura de Dados com o objetivo de implementar um sistema de gerenciamento de figurinhas da Copa do Mundo utilizando listas encadeadas e filas FIFO desenvolvidas manualmente.
+Projeto desenvolvido para a disciplina de Estrutura de Dados com o objetivo de implementar um sistema de gerenciamento de figurinhas da Copa do Mundo utilizando listas encadeadas e filas FIFO.
 
 ---
 
@@ -56,6 +56,18 @@ FIFO (First In, First Out) significa que o primeiro elemento inserido é o prime
 
 ---
 
+# Tecnologias Utilizadas
+
+* Python 3
+* Programação Orientada a Objetos
+* Lista Encadeada
+* Fila FIFO
+* JSON
+* Git
+* GitHub
+
+---
+
 # Estrutura do Projeto
 
 ```text
@@ -69,6 +81,7 @@ Figurinhas_Copa/
 ├── historico.py
 ├── persistencia.py
 ├── dados.json
+├── .gitignore
 └── README.md
 ```
 
@@ -86,7 +99,16 @@ Figurinhas_Copa/
 | historico.py    | Gerenciamento do histórico de trocas              |
 | persistencia.py | Salvamento e carregamento dos dados               |
 | dados.json      | Armazenamento das informações do sistema          |
+| .gitignore      | Arquivos ignorados pelo Git                       |
 | README.md       | Documentação do projeto                           |
+
+---
+
+# Observação
+
+As estruturas de dados utilizadas neste projeto foram implementadas manualmente utilizando nós encadeados.
+
+Não foram utilizadas estruturas prontas do Python para representar a lista encadeada e a fila FIFO exigidas pelo projeto.
 
 ---
 
@@ -154,25 +176,96 @@ Agora você estará dentro da pasta do projeto.
 
 # Como Executar o Projeto
 
-Primeiramente, verifique se o Python está instalado:
-
-```bash
-python --version
-```
-
-Se uma versão do Python for exibida, o ambiente está pronto para executar o sistema.
-
-Para iniciar o programa, execute:
+Com o terminal aberto dentro da pasta do projeto, execute:
 
 ```bash
 python main.py
 ```
 
+Caso seu sistema utilize o comando `python3`, execute:
+
+```bash
+python3 main.py
+```
+
 ---
 
-Disciplina: Estrutura de Dados
+# Menu Principal
 
-Faculdade de Tecnologia de Rio Claro (FATEC)
+Ao iniciar o sistema será exibido um menu semelhante ao seguinte:
+
+```text
+1 - Inserir figurinha
+2 - Remover figurinha
+3 - Buscar por número
+4 - Buscar por jogador
+5 - Buscar por seleção
+6 - Mostrar álbum
+7 - Porcentagem concluída
+8 - Mostrar repetidas
+9 - Contar repetidas
+10 - Registrar troca
+11 - Histórico de trocas
+12 - Salvar dados
+13 - Carregar dados
+0 - Sair
+```
+
+---
+
+# Persistência dos Dados
+
+O sistema utiliza um arquivo JSON para armazenar as informações do álbum.
+
+Ao selecionar a opção:
+
+```text
+12 - Salvar dados
+```
+
+os dados serão gravados no arquivo:
+
+```text
+dados.json
+```
+
+Para recuperar informações previamente salvas, utilize:
+
+```text
+13 - Carregar dados
+```
+
+Serão restauradas:
+
+* Figurinhas do álbum;
+* Figurinhas repetidas;
+* Histórico de trocas.
+
+---
+
+# Atualizando o Projeto no GitHub
+
+Após realizar alterações no código, utilize os seguintes comandos:
+
+```bash
+git add .
+git commit -m "Descrição da alteração"
+git push
+```
+
+## Explicação dos Comandos
+
+### git add .
+
+Adiciona todos os arquivos modificados para preparação do commit.
+
+### git commit -m "Descrição da alteração"
+
+Cria um registro permanente das alterações realizadas.
+
+### git push
+
+Envia as alterações para o repositório remoto no GitHub.
 
 ---
 
@@ -192,4 +285,4 @@ Este projeto foi desenvolvido com o objetivo de aplicar conceitos de:
 
 # Status do Projeto
 
-Projeto desenvolvido para fins acadêmicos na disciplina de Estrutura de Dados.
+Projeto desenvolvido para fins acadêmicos na disciplina de Estrutura de Dados da Faculdade de Tecnologia de Rio Claro (FATEC).  
