@@ -1,6 +1,5 @@
 from nodos import NodoLista
 
-
 class Album:
     def __init__(self):
         self.inicio = None
