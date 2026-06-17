@@ -1,6 +1,5 @@
 from nodos import NodoFila
 
-
 class Fila:
     def __init__(self):
         self.inicio = None

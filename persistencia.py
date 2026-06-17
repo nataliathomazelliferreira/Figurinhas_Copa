@@ -1,7 +1,6 @@
 import json
 from figurinha import Figurinha
 
-
 class Persistencia:
     def __init__(self, caminho):
         self.caminho = caminho

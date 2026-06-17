@@ -1,6 +1,5 @@
 from fila import Fila
 
-
 class Historico:
     def __init__(self):
         self.fila = Fila()

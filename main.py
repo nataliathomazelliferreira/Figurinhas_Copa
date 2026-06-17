@@ -3,7 +3,6 @@ from album import Album
 from historico import Historico
 from persistencia import Persistencia
 
-
 class SistemaFigurinhas:
     def __init__(self):
         self.album = Album()
@@ -164,7 +163,6 @@ class SistemaFigurinhas:
                 print("Sistema encerrado.")
             else:
                 print("Opção inválida.")
-
 
 if __name__ == "__main__":
     sistema = SistemaFigurinhas()
